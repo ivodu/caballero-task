@@ -3,16 +3,23 @@
 <head>
     <title>Eko nams</title>
     <link rel="stylesheet" href="css/main.css">
-    <div class="navbar">
-        <div class="logo" href="#home">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+</head>
+
+<body>
+
+    <div class="logo" href="#home">
             <img src="logo.png">
-        </div>
-        <a href="#Kvalitāte">Kvalitāte</a>
-        <a href="#Projekti">Projekti</a>
-        <div class="dropdown">
-            <button class="dropbtn">Sadarbība
-              <i class="fa fa-caret-down"></i>
-            </button>
+    </div>
+        <div class="navbar">
+            <a href="#Kvalitāte">Kvalitāte</a>
+             <a href="#Projekti">Projekti</a>
+             <div class="dropdown">
+                 <button 
+                    class="dropbtn">Sadarbība
+                 </button>
             <div class="dropdown-content">
               <a href="#shēma">Shēma</a>
               <a href="#">Partneri</a>
@@ -23,18 +30,109 @@
         <a href="#parmums">Par mums</a>
         <a href="#kontakti">Kontakti</a>
       </div>
-      </head>
-<header>
-    <div class="hero">
-        <h1>Guļbūvju ražošana
-            īsti Skandināviskās
-            tradīcijās
-       </h1>
+
+        <div class="hero">
             <video autoplay muted loop id="myVideo">
-            <source src="video.mp4" type="video/mp4">
+                <source src="video.mp4" type="video/mp4">
             </video>
+                 <div class="hero-text">
+                    <h1>
+                        Guļbūvju ražošana īsti Skandināviskās tradīcijās
+                    </h1>
+                 </div>
+        </div>
+        <div id="page-container">
+            <div id="content-wrap">
+
+                 <div class="middle">
+                    <!-- <div class="counting-numbers">
+                         <div class="inner-width">
+                            <div class="col">
+                                 <i class="far fa-smile-wink"></i>
+                                     <div class="num">1246</div>
+                                     gadi
+                             </div>
+            
+                            <div class="col">
+                                 <i class="fas fa-briefcase"></i>
+                                    <div class="num">670</div>
+                                    +
+                             </div>
+            
+                    <div class="col">
+                      <i class="far fa-object-group"></i>
+                      <div class="num">30 000</div>
+                      m
+                    </div>
+            
+                    <div class="col">
+                      <i class="far fa-object-group"></i>
+                      <div class="num">0,5</div>
+                        mm
+                    </div>
+
+                    <div class="col">
+                        <i class="far fa-object-group"></i>
+                        <div class="num">98</div>
+                          %
+                      </div>
+                  </div>
+
+            </div> -->
+
+        </div>
+
+            <script type="text/javascript">
+                $(".num").counterUp({delay:50,time:1000});
+              </script>
+
+
+            <article class="product-type">
+                <h4>Produkts</h4>
+                <p>
+                    Guļbūve ir viena no senākajām ēku konstrukcijām, 
+                    kura, nezaudējot savu īpašo vērtību un nozīmi, 
+                    saglabājusies līdz pat mūsdienām. Aizvien vairāk 
+                    pilsētnieku izjūt nepieciešamību dzīvot ekoloģiski 
+                    tīrā un mājīgā vidē, būt harmonijā ar dabu, ar sevi. 
+                    Meistarīgi veidota guļbūve apvienojumā ar modernām 
+                    tehnoloģijām palīdz šos sapņus realizēt dzīvē.
+                </p>
+                 <a class="more__about" href="#">Vairāk par produktu</a>
+                 <img src="koks.png">
+
+            </article>
+        
+            <!-- all other page content -->
+        <div class="two_houses">
+            <h4>
+                Aktualitātes
+            </h4>
+            <img src="photo-house.jpg" class="first-image">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <img src="photo-room.jpeg" class="second-image">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+        </div>
+        </div>
+        <footer id="footer">
+            <div class="eko-nams">
+                 <img src="eko-nams.png">
+            </div>
+            <div class="footer-line">
+                <img src="footer-lines.png">
+            </div>
+            <div class="c-text">
+                <p>
+                    © 2020 EKO NAMS. Visas tiesības aizsargātas
+                </p>
+            </div>
+          </footer>
     </div>
-</header>
-<body>
+
 </body>
+
 </html>
