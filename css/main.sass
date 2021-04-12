@@ -23,7 +23,7 @@ body
 
   .navbar a 
     float: left
-    font-size: 16px
+    font-size: 14px
     color: #292929
     text-align: center
     padding: 14px 16px
@@ -31,13 +31,15 @@ body
     font-weight: bold
     text-transform: uppercase
   
-  .dropdown 
+  .dropdown
     float: left
     overflow: hidden
+    text-align: center
+    
   
   
   .dropdown .dropbtn 
-    font-size: 16px 
+    font-size: 14px 
     border: none
     outline: none
     padding: 14px 16px
@@ -56,7 +58,6 @@ body
   
   .dropdown-content 
     display: none
-    position: absolute
     background-color: #f9f9f9
     min-width: 160px
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
@@ -69,7 +70,6 @@ body
     padding: 12px 16px
     text-decoration: none
     display: block
-    text-align: left
   
   
   .dropdown-content a:hover 
@@ -79,6 +79,16 @@ body
   .dropdown:hover .dropdown-content 
     display: block
 
+
+.language-bar a
+    float: left
+    font-size: 14px
+    color: #292929
+    text-align: center
+    padding: 14px 16px
+    text-decoration: none
+    font-weight: bold
+    text-transform: uppercase
 
 
 #myVideo
@@ -96,11 +106,11 @@ body
     top: 5em
     left: 5rem
     text-align: left
-    width: 29px
+    width: 18em
     color: #FFFFFF
     font-family: Klavika
     font-size: 30px
-    line-height: 1.9em
+    line-height: 2.3em
 
 #page-container
   position: relative
@@ -111,11 +121,174 @@ body
   padding-bottom: 2.5rem    /* Footer height */
     
 
+article.product-type 
+  display: grid
+  grid-auto-flow: column
+  margin-top: 100%
+  p
+    height: 189px
+    width: 487px
+    color: #6F6F70
+    font-family: "Questa Sans"
+    font-size: 16px
+    letter-spacing: 0
+    line-height: 28px
+  h4
+    height: 60px
+    width: 487px
+    color: #1D1A27
+    font-family: Klavika
+    font-size: 44px
+    letter-spacing: 0.96px
+    line-height: 60px
+  a.more__about
+    height: 16px
+    width: 169px
+    color: #262330
+    font-family: Klavika
+    font-size: 16px
+    font-weight: bold
+    letter-spacing: 0
+    line-height: 16px
+    text-decoration: none
+  img
+    width: 100%
+    height: auto
+
+  .product-items
+    padding-left: 5rem
+
+article.product-type .product-items
+  margin-top: 10rem
+
+.product-image
+  margin-top: 10rem
+
+.two_houses 
+  background-color: #E6E6E6
+  padding-bottom: 10em
+  img
+    max-width: 100%
+    height: auto
+    transition: transform .2s /* Animation */
+  img:hover
+    transform: scale(1.5) /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    p
+      transition: all .5s ease-in-out
+      margin-top: 0
+
+  h4
+    color: #1D1A27
+    font-family: Klavika
+    font-size: 44px
+    letter-spacing: 0.96px
+    line-height: 60px
+    text-align: center
+    padding-top: 5rem
+  p
+    height: 52px
+    width: 460px
+    color: #FFFFFF
+    font-family: Klavika
+    font-size: 18px
+    font-weight: bold
+    letter-spacing: 1.2px
+    line-height: 26px
+    text-shadow: 0 1px 9px 0 rgba(0,0,0,0.5)
+    margin-top: -5rem
+    position: absolute
+    padding-left: 2rem
+
+  .first-image
+    padding-right: 3em
+
+.two-elements
+  display: flex
+
+.middle
+  height: 100%
+  width: 100%
+  position: absolute
+  margin-top: -40%
+  z-index: -99999
+
+.middle img 
+  height: auto
+  width: 100%
+  
+.counting-numbers
+  padding: 40px 0
+  width: 100%
+  background: #242032
+  
+.inner-width
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 5em
+  
+.col
+  text-align: center
+  padding: 20px
+  text-transform: uppercase
+  font-family: Klavika
+  font-size: 16px
+  font-weight: bold
+  letter-spacing: 0
+  line-height: 19px
+  text-align: center
+  p 
+  color: #FFFFFF
+    
+.eko-nams
+    display: flex
+    flex-direction: row
+
+
+.num
+    font-size: 27px
+    margin: 26px 0px
+    padding-top: 0.5em
+    height: 25px
+    width: auto
+    opacity: 0.87
+    background-color: #EDEDED
+    color: #242032
+
+.num-text
+  font-size: 27px
+  margin: 26px 0px
+  padding-top: 0.5em
+  height: 25px
+  width: auto
+  opacity: 0.87
+  background-color: #EDEDED
+  color: #242032
+
+.map-locations
+  img
+    width: 100%
+    height: auto
+    padding-bottom: 20rem
+  h4
+    color: #242032
+    font-family: Klavika
+    font-size: 44px
+    letter-spacing: 0.96px
+    line-height: 60px
+    text-align: center
+
+
+#map 
+  height: 100%
+
+
+//footer section
+
 #footer
   position: absolute
   bottom: 0
   width: 100%
-  height: 0.3rem   
+  height: 10% 
   color: #1D1A27
   font-family: Klavika
   font-size: 16px
@@ -123,6 +296,15 @@ body
   letter-spacing: 0
   line-height: 19px
   background-color: white
+  text-transform: uppercase
+
+.footer-nav
+  position: absolute
+  right: 0
+  a 
+    text-decoration: none
+    color: #292929
+    padding-left: 2rem
   
   
 .c-text 
@@ -133,69 +315,55 @@ body
   font-size: 10px
   letter-spacing: 0
   line-height: 18px
+  margin-top: 3rem
+
 
 .footer-line 
   padding-top: 2rem
 
-
-
-article.product-type 
-  display: grid
-  grid-auto-flow: column
-  margin-top: 100%
-
-img
+.footer-line img
+  width: 100%
   height: auto
-  width: 100%
 
+.social-icons
+    position: absolute
+    right: 0
+    margin-top: -1rem
+    a
+      text-decoration: none
+      padding-right: 1rem
 
-.two_houses 
-  opacity: 0.72
-  background-color: #E6E6E6
-
-
-.middle
-  height: 100%
-  width: 100%
-  transform: translateY(-50%)
-  
-.counting-numbers
-  padding: 40px 0
-  width: 100%
-  background: #242032
-  
-.inner-width
-  max-width: 1200px
-  margin: auto
+.caballero-logo 
+  justify-content: center
   display: flex
-  
-.col
-  flex: 1
-  text-align: center
-  padding: 20px
-  color: #fff
-  text-transform: uppercase
-  
-.col i
-  font-size: 40px
-  color: #333
-  
-.num
-  font-size: 40px
-  margin: 20px 0
-  
+  margin-top: 3rem
 
 
-  // mobile breakpoints
+// mobile breakpoints
 
-
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 1040px)
   .navbar 
     background: white
     display: flex
     flex-direction: column
+    padding-top: 12rem
+
+  .language-bar 
+    position: absolute
+    top: 9rem
+
 
   body .logo img 
     height: 118.72px
     width: 90.1px
 
+  .inner-width
+    display: flex
+    flex-direction: column
+    grid-gap: 0
+    
+  article.product-type .product-items 
+    margin-top: 71rem
+
+  .product-image 
+    margin-top: 77rem
